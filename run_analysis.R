@@ -41,7 +41,7 @@ testData = cbind(yTest,subjectTest,xTest);
 finalData = rbind(trainingData,testData);
 
 #create a vector for column names from finalData, which will be used to select the desired mean() & stddev() columns
-colNames  = colnames(finalData); 
+colNames = colnames(finalData); 
 
 #2) extract only the measurements on the mean and standard deviation for each measurement
 
@@ -57,7 +57,7 @@ finalData = finalData[logicalVector==TRUE];
 finalData = merge(finalData,activityType,by='activityId',all.x=TRUE);
 
 #update colNames vector to include new column names after merge
-colNames  = colnames(finalData); 
+colNames = colnames(finalData); 
 
 # 4) appropriately label the data set with descriptive variable names 
 
